@@ -61,7 +61,7 @@ class CreditCard extends StatelessWidget {
                   const SizedBox(
                     height: 5,
                   ),
-                  Text(
+                  const Text(
                     "Rp6.000",
                     style: TextStyle(
                         fontSize: 36,

@@ -34,12 +34,11 @@ class _BottomNavBarRaisedInsetFb1State
     Size size = MediaQuery.of(context).size;
     double height = 56;
 
-    final primaryColor = Colors.blue;
-    final secondaryColor = Colors.black54;
-    final accentColor = const Color(0xffffffff);
-    final backgroundColor = Colors.white;
+    const primaryColor = Colors.blue;
+    const secondaryColor = Colors.black54;
+    const backgroundColor = Colors.white;
 
-    final shadowColor = Colors.grey; //color of Navbar shadow
+    const shadowColor = Colors.grey; //color of Navbar shadow
     double elevation = 100; //Elevation of the bottom Navbar
 
     return BottomAppBar(
@@ -58,11 +57,11 @@ class _BottomNavBarRaisedInsetFb1State
             heightFactor: 0.6,
             child: FloatingActionButton(
                 backgroundColor: primaryColor,
-                child: Icon(Icons.shopping_basket),
                 elevation: 0.1,
-                onPressed: () {}),
+                onPressed: () {},
+                child: const Icon(Icons.shopping_basket)),
           ),
-          Container(
+          SizedBox(
             height: height,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -83,7 +82,7 @@ class _BottomNavBarRaisedInsetFb1State
                   defaultColor: secondaryColor,
                   selectedColor: primaryColor,
                 ),
-                SizedBox(width: 56),
+                const SizedBox(width: 56),
                 NavBarIcon(
                     text: "Cart",
                     icon: Icons.local_grocery_store_outlined,
@@ -131,7 +130,7 @@ class BottomNavCurvePainter extends CustomPainter {
 
     path.lineTo(insetCurveBeginnningX, 0);
     path.arcToPoint(Offset(insetCurveEndX, 0),
-        radius: Radius.circular(41), clockwise: true);
+        radius: const Radius.circular(41), clockwise: true);
 
     path.lineTo(size.width, 0);
 

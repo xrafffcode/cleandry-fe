@@ -37,7 +37,7 @@ class Home extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          CreditCard(),
+          const CreditCard(),
           // list kategori
           const SizedBox(
             height: 20,
@@ -67,7 +67,7 @@ class Home extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
             height: 100,
             child: ListView(
               scrollDirection: Axis.horizontal,
